@@ -53,6 +53,76 @@ const STARTER_POKEMON: Pokemon[] = [
     // STUDENT TODO: Add classification, height, and weight for Charmander
     // Hint: classification = "Lizard Pokémon"
   },
+    {
+    name: "Cyndaquil",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/155.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Torchic",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/255.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Chimchar",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/390.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Tepig",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/498.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Cyndaquil",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/155.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Fennekin",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/653.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Litten",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/725.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Scorbunny",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/813.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Fuecoco",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/909.png",
+    types: [{ name: "Fire", color: FIRE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
+    {
+    name: "Koffing",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/109.png",
+    types: [{ name: "Poison", color: PURPLE }],
+    // STUDENT TODO: Add classification, height, and weight for Charmander
+    // Hint: classification = "Lizard Pokémon"
+  },
 ];
 
 export const getStarterPokemon = (): Pokemon[] => STARTER_POKEMON;
