@@ -3,31 +3,34 @@ export interface PokemonType {
   color: string;
 }
 
-// STUDENT TODO: Create a PokemonMeasurement interface here.
-// It should have two string fields: `metric` and `imperial`.
-// Example: { metric: "0.5m", imperial: "1'08\"" }
+export interface PokemonMeasurement {
+  metric: string;
+  imperial: string;
+}
 
 export interface Pokemon {
   name: string;
   image: string;
   types: PokemonType[];
-  // STUDENT TODO: Add `classification: string`
-  // STUDENT TODO: Add `height: PokemonMeasurement`
-  // STUDENT TODO: Add `weight: PokemonMeasurement`
+  classification: string;
+  height: PokemonMeasurement;
+  weight: PokemonMeasurement;
 }
 
 const WATER = "#6890F0";
 const GRASS = "#78C850";
 const PURPLE = "#A040A0";
 const FIRE = "#F08030";
+const PSYCHIC = "#F85888";
 
 const STARTER_POKEMON: Pokemon[] = [
   {
     name: "Squirtle",
     image: "https://www.serebii.net/scarletviolet/pokemon/new/small/007.png",
     types: [{ name: "Water", color: WATER }],
-    // STUDENT TODO: Add classification, height, and weight for Squirtle
-    // Hint: classification = "Tiny Turtle Pokémon"
+    classification: "Tiny Turtle Pokémon",
+    height: { metric: "0.5m", imperial: "1'08\"" },
+    weight: { metric: "9.0kg", imperial: "19.8lbs" },
   },
   {
     name: "Bulbasaur",
@@ -36,92 +39,97 @@ const STARTER_POKEMON: Pokemon[] = [
       { name: "Grass", color: GRASS },
       { name: "Poison", color: PURPLE },
     ],
-    // STUDENT TODO: Add classification, height, and weight for Bulbasaur
-    // Hint: classification = "Seed Pokémon"
+    classification: "Seed Pokémon",
+    height: { metric: "0.7m", imperial: "2'00\"" },
+    weight: { metric: "6.9kg", imperial: "15.2lbs" },
   },
   {
     name: "Charmander",
     image: "https://www.serebii.net/scarletviolet/pokemon/new/small/004.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
-  },
-    {
-    name: "Goku",
-    image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b88f884e-d134-4606-a5ab-0eb9bcfaaa36/dg3irsj-a65b7cfa-7b91-4115-9f4d-6e9e5ad9a191.png/v1/fill/w_1280,h_2455/mui_cc_goku_png_format_by_gogitoytb_dg3irsj-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjQ1NSIsInBhdGgiOiIvZi9iODhmODg0ZS1kMTM0LTQ2MDYtYTVhYi0wZWI5YmNmYWFhMzYvZGczaXJzai1hNjViN2NmYS03YjkxLTQxMTUtOWY0ZC02ZTllNWFkOWExOTEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.KAiHxEowyOkKOJB-igGAwcqs-hhPFAnU1TG-ohD6yj8",
-    types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Lizard Pokémon",
+    height: { metric: "0.6m", imperial: "1'10\"" },
+    weight: { metric: "8.5kg", imperial: "18.7lbs" },
   },
     {
     name: "Cyndaquil",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/155.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Fire Mouse Pokémon",
+    height: { metric: "0.6m", imperial: "1'08\"" },
+    weight: { metric: "7.9kg", imperial: "17.4lbs" },
   },
     {
     name: "Torchic",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/255.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Chick Pokémon",
+    height: { metric: "0.4m", imperial: "1'04\"" },
+    weight: { metric: "2.5kg", imperial: "5.5lbs" },
   },
     {
     name: "Chimchar",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/390.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Chimp Pokémon",
+    height: { metric: "0.5m", imperial: "1'08\"" },
+    weight: { metric: "6.2kg", imperial: "13.7lbs" },
   },
     {
     name: "Tepig",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/498.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
-  },
-    {
-    name: "Cyndaquil",
-    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/155.png",
-    types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Fire Pig Pokémon",
+    height: { metric: "0.5m", imperial: "1'08\"" },
+    weight: { metric: "9.9kg", imperial: "21.8lbs" },
   },
     {
     name: "Fennekin",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/653.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Fox Pokémon",
+    height: { metric: "0.4m", imperial: "1'04\"" },
+    weight: { metric: "9.4kg", imperial: "20.7lbs" },
   },
     {
     name: "Litten",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/725.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Fire Cat Pokémon",
+    height: { metric: "0.4m", imperial: "1'04\"" },
+    weight: { metric: "4.3kg", imperial: "9.5lbs" },
   },
     {
     name: "Scorbunny",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/813.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Rabbit Pokémon",
+    height: { metric: "0.3m", imperial: "1'00\"" },
+    weight: { metric: "4.5kg", imperial: "9.9lbs" },
   },
     {
     name: "Fuecoco",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/909.png",
     types: [{ name: "Fire", color: FIRE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Fire Croc Pokémon",
+    height: { metric: "0.4m", imperial: "1'04\"" },
+    weight: { metric: "9.8kg", imperial: "21.6lbs" },
   },
     {
     name: "Koffing",
     image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/109.png",
     types: [{ name: "Poison", color: PURPLE }],
-    // STUDENT TODO: Add classification, height, and weight for Charmander
-    // Hint: classification = "Lizard Pokémon"
+    classification: "Poison Gas Pokémon",
+    height: { metric: "0.6m", imperial: "2'00\"" },
+    weight: { metric: "1.0kg", imperial: "2.2lbs" },
+  },
+    {
+    name: "Espeon",
+    image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/196.png",
+    types: [{ name: "Psychic", color: PSYCHIC }],
+    classification: "Sun Pokémon",
+    height: { metric: "0.9m", imperial: "2'11\"" },
+    weight: { metric: "26.5kg", imperial: "58.4lbs" },
   },
 ];
 
